@@ -1,0 +1,144 @@
+.filter {
+    background: #FFFFFF;
+    padding: 15px 0px;
+    position: sticky;
+    top: 0%;
+    left: 0%;
+
+    z-index: 998;
+    transition: .3s;
+}
+
+.filter.active {
+    box-shadow: -5px 0 15px rgba(0,0,0,.2);
+}
+
+.filter__logo {
+    width: 0px;
+    display: flex;
+    align-items: center;
+    transition: .3s;
+}
+
+.filter__inner {
+    transition: .3s;
+    display: flex;
+    align-items: center;
+}
+
+.filter__inner.active .filter__logo {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: .3s;
+}
+
+.filter__inner.active {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    transition: .3s;
+}
+
+.filter__logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.filter_block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filter_list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.filter_list::-webkit-scrollbar {
+    display: none;
+}
+
+.filter_list a {
+    flex-shrink: 0;
+}
+
+.filter_item {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 600;
+    color: #011B18;
+    cursor: pointer;
+    
+    transition: .2s;
+    padding: 13px 20px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+.filter_item.active {
+    background: #309b42;
+    color: #fff;
+}
+
+.filter_item.active:hover {
+    background: #309b42;
+    color: #fff;
+}
+
+.filter_item:hover {
+    background: rgba(1, 27, 24, 0.10);
+}
+
+.filter_cart {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #FFFFFF;
+    padding: 14px 20px;
+    background: #348379;
+    border-radius: 5px;
+
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width:430px) {
+
+    .filter_list {
+        overflow-x: scroll;
+        gap: 0px;
+        max-width: 80%;
+    }
+
+    .filter_item {
+        padding: 10px 15px;
+    }
+
+    .filter_list a {
+        white-space: nowrap;
+    }
+
+    .filter_block {
+        padding: 0px 10px;
+    }
+
+    .filter_cart {
+        display: none;
+    }
+
+    .filter_item:hover {
+        background: none;
+    }
+
+    .filter__inner.active {
+        gap: 10px;
+    }
+}

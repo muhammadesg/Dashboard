@@ -1,0 +1,147 @@
+.info {
+    position: relative !important;
+    top: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    position: fixed !important;
+
+    z-index: 999 !important;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.info__inner {
+    width: 750px !important;
+    height: 400px !important;
+    background-color: #fff !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+
+    position: relative !important;
+}
+
+.info_minus {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 6px 0px 0px 6px;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.info_plus {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 0px 6px 6px 0px;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.info_minus:hover,
+.info_plus:hover {
+    background-color: #f1c40f;
+}
+
+.info_span {
+    text-align: center;
+    width: calc(100% - 100%);
+    padding: 14px 0;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #036C5E;
+    background: #E6E9E8;
+}
+
+.info_counter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    background-color: #F4F4F4;
+    border-radius: 6px;
+}
+
+.info__card {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    height: 100%;
+
+    padding: 20px;
+}
+
+.info__left {
+    width: 100%;
+    height: 100%;
+}
+
+.info__left img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.info__title {
+    font-size: 27px;
+    font-weight: 700;
+
+    margin-bottom: 8px;
+}
+
+.info__text {
+    color: #828282;
+    margin-bottom: 15px;
+    line-height: 18px;
+}
+
+.info__right {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info__price {
+    font-size: 19px;
+    color: #000;
+
+    margin-bottom: 20px;
+}
+
+.info__close {
+    width: 45px;
+    height: 45px;
+
+    border-radius: 100%;
+    border: none;
+
+    position: absolute;
+
+    top: 15px;
+    left: 15px;
+    cursor: pointer;
+
+    background-color: #fff;
+
+    box-shadow: 2px 2px 10px rgba(0,0,0,.1);
+}
+
+.info__close i {
+    color: #ff002b;
+}
